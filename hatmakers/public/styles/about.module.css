@@ -1,0 +1,44 @@
+/* styles/about.module.css */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--primary-color);
+    margin: 10px; /* Add margin to separate the cards from the image container */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    padding: 10px; /* Add padding for better readability */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Change to a single column layout on small screens */
+    }
+
+    .cards-container {
+        margin: 0; /* Remove margin for better spacing on mobile */
+    }
+}

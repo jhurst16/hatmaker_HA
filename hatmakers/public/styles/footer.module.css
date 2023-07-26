@@ -1,0 +1,61 @@
+/* public/styles/footer.module.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    margin:20px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.nav-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Apply styles for links on hover */
+.nav-link a:hover {
+    color: black;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.column:not(:last-child) {
+    margin-bottom: 20px; /* Add margin between columns (except for the last column) */
+}
+
+.column h4 {
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+.column a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Change to a single column layout on small screens */
+    }
+
+    .column:not(:last-child) {
+        margin-bottom: 10px; /* Adjust margin between columns for better spacing on mobile */
+    }
+}

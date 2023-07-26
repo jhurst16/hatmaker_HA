@@ -1,0 +1,48 @@
+/* styles/contact.module.css */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping if the content overflows horizontally */
+    justify-content: space-evenly; /* Evenly space the two sections */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Update the input and textarea class names to be local */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.padding {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.contact-info {
+    flex: 1; /* Allow the main content to take up available space */
+    max-width: 600px; /* Limit the width of the main content to prevent excessive stretching */
+}
+
+.hours {
+    flex: 1; /* Allow the hours section to take up available space */
+    max-width: 400px; /* Limit the width of the hours section */
+}
+
+/* Add other styles as needed */
+
+
+/* Add other styles as needed */
+

@@ -1,0 +1,122 @@
+/* public/styles/index.module.css */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--tertiary-color);
+    border-radius: 15px;
+    margin:15px;
+    color: var(--primary-color);
+}
+
+/* Center header content on mobile */
+@media screen and (max-width: 600px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px; /* Set a fixed height for the header on mobile */
+    }
+}
+
+.nav-link {
+    color: var(--secondary-color);
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-link a:hover {
+    color: var(--accent-color);;
+}
+
+.carousel {
+    position: relative;
+    margin: 20px auto;
+    max-width: 800px; /* Set a maximum width for the carousel container */
+    overflow: hidden; /* Hide overflow to prevent showing multiple images at once */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-image {
+    min-width:600px;
+    max-width: 600px;
+    min-height:600px;
+    max-height:600px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.carousel-button:focus {
+    outline: none;
+}
+
+.carousel-button:first-child {
+    left: 10px;
+}
+
+.carousel-button:last-child {
+    right: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row; /* Change to column layout on mobile */
+    align-items: center; /* Center cards horizontally on mobile */
+    justify-content: space-evenly;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+/* Mobile-friendly styles */
+@media screen and (max-width: 600px) {
+    .carousel {
+        max-width: 400px; /* Reduce carousel width on smaller screens */
+    }
+
+    .carousel-button {
+        font-size: 20px; /* Decrease button size on smaller screens */
+    }
+
+    .cards {
+        flex-direction: column; /* Change back to row layout on smaller screens */
+        flex-wrap: wrap;
+        justify-content: space-around; /* Evenly space cards on smaller screens */
+    }
+
+    .card {
+        max-width: 45%; /* Adjust card width on smaller screens */
+    }
+}

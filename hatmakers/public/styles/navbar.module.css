@@ -1,0 +1,49 @@
+/* styles/navbar.module.css */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some spacing between the logo and company name */
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-link a:hover {
+    color: var(--tertiary-color);;
+}
+
+/* Add other styles as needed */
